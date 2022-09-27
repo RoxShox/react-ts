@@ -1,0 +1,37 @@
+.root{
+	display: flex;
+	justify-content: center;
+	column-gap: 10px;
+	li{
+		display: inline-flex;
+		&:global{
+			&.selected{
+				background-color: #fe5f1e;
+				border-radius: 100%;
+				a{
+					color: #fff;
+					border: 0;
+				}
+			}
+		}
+		a{
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			color: rgb(167, 122, 0);
+			width: 40px;
+			height: 40px;
+			border: 1px solid orange;
+			border-radius: 100%;
+			transition: all .3s;
+			display: inherit;
+			&:hover{
+				background-color: #fe5f1e;
+				border: 0;
+				color: #fff;	
+			}
+			
+		}
+		
+	}
+}
